@@ -95,6 +95,15 @@ print(train_dataset)
 print('='*50)
 print(test_dataset)
 
+n_normal = 0
+n_pneumonia = 0
+
+for i in range(len(train_dataset)):
+    if train_dataset[i][1] == 1:
+        n_normal += 1
+    else:
+        n_pneumonia+=1
+n_normal, n_pneumonia
 
 # ### Visualization
 # 
